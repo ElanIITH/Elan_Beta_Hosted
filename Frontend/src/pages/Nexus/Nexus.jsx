@@ -30,7 +30,7 @@ const Nexus = () => {
     try {
       console.log('Submitting registration form:', { firstName, lastName, dob, grade, school, personalNumber, parentNumber, email, marksheetURL });
 
-      const response = await axios.post('http://localhost:5000/user/register', {
+      const response = await axios.post('https://elan-beta-hosted.onrender.com/user/register', {
         firstName,
         lastName,
         dob,

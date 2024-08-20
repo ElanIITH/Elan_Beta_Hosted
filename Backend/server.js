@@ -13,7 +13,7 @@ connectDB();
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://elan.org.in',
+    origin: 'https://elan.org.in/',
     credentials: true,
 }));
 
