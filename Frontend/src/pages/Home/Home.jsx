@@ -3,6 +3,7 @@ import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx
 import {gsap} from 'gsap';
 import {useGSAP} from '@gsap/react';
 import {useEffect, useRef, useState} from 'react';
+import {Link} from 'react-router-dom';
 import {ScrollTrigger} from 'gsap/all';
 import Marquee from 'react-fast-marquee';
 
@@ -131,7 +132,7 @@ function Home() {
       <div className='home-bg'></div>
       <div className='container' ref={containerRef}>
 
-        <a href='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+        {/* <a href='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
           <div className='hero'>
             <div className='hero-text'>
               <span ref={elanRef} className='elan-text'>Elan &<br/></span>
@@ -142,7 +143,20 @@ function Home() {
               <div>IIT HYDERABAD</div>
             </div>
           </div>
-        </a>
+        </a> */}
+        
+        <Link to='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+          <div className='hero'>
+            <div className='hero-text'>
+              <span ref={elanRef} className='elan-text'>Elan &<br/></span>
+              <span ref={nvisionRef}><span className='eta'>&eta;</span>Vision</span>
+            </div>
+            <div className='hero-sub-text'>
+              <div className='mobile-hide'>{currentTime}</div>
+              <div>IIT HYDERABAD</div>
+            </div>
+          </div>
+        </Link>
 
         <div className='hero desktop-hide'>
           <div className='hero-text'>
