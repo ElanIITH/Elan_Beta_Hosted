@@ -131,19 +131,6 @@ function Home() {
       <VerticalMarquee/>
       <div className='home-bg'></div>
       <div className='container' ref={containerRef}>
-
-        {/* <a href='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
-          <div className='hero'>
-            <div className='hero-text'>
-              <span ref={elanRef} className='elan-text'>Elan &<br/></span>
-              <span ref={nvisionRef}><span className='eta'>&eta;</span>Vision</span>
-            </div>
-            <div className='hero-sub-text'>
-              <div className='mobile-hide'>{currentTime}</div>
-              <div>IIT HYDERABAD</div>
-            </div>
-          </div>
-        </a> */}
         
         <Link to='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
           <div className='hero'>
