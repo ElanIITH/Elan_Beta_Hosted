@@ -25,6 +25,7 @@ import aryan from '/src/assets/team_images/Aryan_Culti&Biggies_Domain Head.jpg';
 import ananya from '/src/assets/team_images/Ananya S Reddy_PR_publicity_web_domain head.jpg';
 import dhruv from '/src/assets/team_images/Dhruv_PR_Publicity_Web_domain head.jpg';
 import katari from '/src/assets/team_images/Siri_Hospitality & Transport_Domain head.jpg';
+import aashrita from '/src/assets/team_images/Aashrita_Venishetty_logistics_domain head.jpg'
 
 
 export const heads = [
@@ -87,6 +88,11 @@ export const heads = [
     name: 'Katari Siri Varshini',
     position: 'Hospitality & Transport head',
     image: katari
+  },
+  {
+    name: "Aashrita Venishetty",
+    position: 'Logistics head',
+    image: aashrita
   }
 ];
 
@@ -271,6 +277,7 @@ import shreevel from '/src/assets/team_images/Shreevel K J_creatives_coordinator
 import anjali from '/src/assets/team_images/Anjali Uikey_Creatives_coordinator.jpg';
 import parvathy from '/src/assets/team_images/Parvathy Sujith_Creatives_Coordinator.jpg';
 import vikas from '/src/assets/team_images/Vikas Addakula_Creatives_Coordinator.jpg';
+import pranav from '/src/assets/team_images/Pranav_Creatives_Coordinator.png'
 
 export const creatives_team = [
   {
@@ -292,6 +299,10 @@ export const creatives_team = [
   {
     name: 'Vika Addakula',
     image: vikas
+  },
+  {
+    name: 'Pranav',
+    image: pranav
   }
 ];
 
@@ -390,17 +401,17 @@ export const public_relations_team = [
   }
 ];
 
-import sailaja from '/src/assets/team_images/Sailaja_Publicity_Coordinator.jpg';
+import Naishadha from '/src/assets/team_images/Naishadha_publicity_coordinator.jpg'
 import gayatri from '/src/assets/team_images/Vadla Gayatri Priya__publicity_coordinator.jpg';
 import Karthikeya from '/src/assets/team_images/Mahenderkar Karthikeya_publicity_coordinator.jpeg';
 import ajay from '/src/assets/team_images/Jatavath Ajay_Publicity_Coordinator.jpg';
 import mahani from '/src/assets/team_images/Mahani_publicity_Coordinator.jpg';
-import abhinavpillai from '/src/assets/team_images/IMG-20240619-WA0003 - Abhinav Karan A Pillai.jpg';
+import abhinavpillai from '/src/assets/team_images/Abhinav_publicity_coordinator.jpg';
 
 export const publicity_team = [
   {
-    name: 'Sura Venkata Sailaja',
-    image: sailaja
+    name: 'Naishadha Voruganti',
+    image: Naishadha
   },
   {
     name: 'Gayatri Priya',

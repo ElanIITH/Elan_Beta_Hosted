@@ -3,9 +3,9 @@ import VerticalMarquee from '/src/components/VerticalMarquee/VerticalMarquee.jsx
 import {gsap} from 'gsap';
 import {useGSAP} from '@gsap/react';
 import {useEffect, useRef, useState} from 'react';
-import {Link} from 'react-router-dom';
 import {ScrollTrigger} from 'gsap/all';
 import Marquee from 'react-fast-marquee';
+import {Link, useNavigate} from 'react-router-dom';
 
 import Banna from '/src/assets/sponsors_images/Banna.png'
 import Blend360 from '/src/assets/sponsors_images/Blend360.png'
@@ -35,6 +35,7 @@ import Uniball from '/src/assets/sponsors_images/Uniball.png'
 
 function Home() {
   gsap.registerPlugin(ScrollTrigger);
+  const navigate = useNavigate();
   const containerRef = useRef(null);
   const elanRef = useRef(null);
   const nvisionRef = useRef(null);
@@ -71,6 +72,12 @@ function Home() {
   const padZero = (number) => {
     return number < 10 ? '0' + number : number;
   };
+
+  function handleWorkshop(e, link) {
+    e.preventDefault();
+    onMouseLeave();
+    navigate(link);
+  }
 
   const onMouseEnter = () => {
     cursorTextRef.current.style.fontSize = '0.04vw';
@@ -131,8 +138,8 @@ function Home() {
       <VerticalMarquee/>
       <div className='home-bg'></div>
       <div className='container' ref={containerRef}>
-        
-        <Link to='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+
+        <a href='/workshops' className='mobile-hide' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} onClick={(e) => handleWorkshop(e, '/workshops')} >
           <div className='hero'>
             <div className='hero-text'>
               <span ref={elanRef} className='elan-text'>Elan &<br/></span>
@@ -143,7 +150,7 @@ function Home() {
               <div>IIT HYDERABAD</div>
             </div>
           </div>
-        </Link>
+        </a>
 
         <div className='hero desktop-hide'>
           <div className='hero-text'>
