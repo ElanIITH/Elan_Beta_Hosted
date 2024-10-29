@@ -103,7 +103,7 @@ function NavBar() {
             <Link to='/competitions'>COMPETITIONS</Link>
           </div>
           <div className='mobile-hide'>
-            <Link to='/socialcause'>SOCIAL CAUSE</Link>
+            <Link to='/nexus'>NEXUS</Link>
           </div>
           <div className='mobile-hide'>
             <Link to='/workshops'>WORKSHOPS</Link>
@@ -133,6 +133,9 @@ function NavBar() {
           </div>
           <div className={'menu-link' + (location.pathname === '/workshops' ? ' active-menu-link' : '')}>
             <a href='/workshops' onClick={(e) => onClickLink(e, '/workshops')}>Workshops</a>
+          </div>
+          <div className={'menu-link' + (location.pathname === '/nexus' ? ' active-menu-link' : '')}>
+            <a href='/nexus' onClick={(e) => onClickLink(e, '/nexus')}>Nexus</a>
           </div>
           <div className={'menu-link' + (location.pathname === '/accommodation' ? ' active-menu-link' : '')}>
             <a href='/accommodation' onClick={(e) => onClickLink(e, '/accommodation')}>Accommodation</a>
