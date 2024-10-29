@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Form = () => {
   const [formData, setFormData] = useState({
+    teamName: '',
     leaderName: '',
     leaderEmail: '',
     leaderPhone: '',
@@ -19,6 +20,8 @@ const Form = () => {
     teammate4Email: '',
     teammate5Name: '',
     teammate5Email: '',
+    teammate6Name: '',
+    teammate6Email: '',
   });
 
   const [message, setMessage] = useState(null);
@@ -39,16 +42,9 @@ const Form = () => {
     setError(null);
     setMessage(null);
 
-    // Validate that all email fields end with @iith.ac.in
-    const { leaderEmail, teammate1Email, teammate2Email, teammate3Email, teammate4Email, teammate5Email } = formData;
-    if (
-      !isValidIithEmail(leaderEmail) ||
-      !isValidIithEmail(teammate1Email) ||
-      !isValidIithEmail(teammate2Email) ||
-      !isValidIithEmail(teammate3Email) ||
-      !isValidIithEmail(teammate4Email) ||
-      !isValidIithEmail(teammate5Email)
-    ) {
+    const { leaderEmail, teammate1Email, teammate2Email, teammate3Email, teammate4Email, teammate5Email, teammate6Email } = formData;
+    const emails = [leaderEmail, teammate1Email, teammate2Email, teammate3Email, teammate4Email, teammate5Email, teammate6Email];
+    if (emails.some(email => email && !isValidIithEmail(email))) {
       setError('All emails must end with @iith.ac.in');
       return;
     }
@@ -56,9 +52,9 @@ const Form = () => {
     try {
       const response = await axios.post('https://api.elan.org.in/api/register', formData, { withCredentials: true });
       // const response = await axios.post('http://localhost:5000/api/register', formData, { withCredentials: true });
-
       setMessage('Registration successful! Redirecting...');
       setFormData({
+        teamName: '',
         leaderName: '',
         leaderEmail: '',
         leaderPhone: '',
@@ -72,9 +68,9 @@ const Form = () => {
         teammate4Email: '',
         teammate5Name: '',
         teammate5Email: '',
+        teammate6Name: '',
+        teammate6Email: '',
       });
-
-      console.log(response.data);
 
       setTimeout(() => {
         navigate('/nexus');
@@ -91,9 +87,21 @@ const Form = () => {
         <h2 className='registration-form-heading'>Register for Nexus</h2>
         <form onSubmit={handleSubmit} className='registration-form'>
 
+          <h3>Team Information</h3>
+          <div>
+            <label>Team Name&nbsp;&nbsp;</label><br />
+            <input
+              type='text'
+              name='teamName'
+              value={formData.teamName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+
           <h3>Leader Information</h3>
           <div>
-            <label className='name-label'>Leader Name&nbsp;&nbsp;</label><br />
+            <label>Leader Name&nbsp;&nbsp;</label><br />
             <input
               type='text'
               name='leaderName'
@@ -103,7 +111,7 @@ const Form = () => {
             />
           </div>
           <div>
-            <label className='email-label'>Leader Email&nbsp;&nbsp;</label><br />
+            <label>Leader Email&nbsp;&nbsp;</label><br />
             <input
               type='email'
               name='leaderEmail'
@@ -113,7 +121,7 @@ const Form = () => {
             />
           </div>
           <div>
-            <label className='phone-label'>Leader Phone&nbsp;&nbsp;</label><br />
+            <label>Leader Phone&nbsp;&nbsp;</label><br />
             <input
               type='tel'
               name='leaderPhone'
@@ -124,7 +132,7 @@ const Form = () => {
           </div>
 
           <h3>Teammates Information</h3>
-          {[1, 2, 3, 4, 5].map((index) => (
+          {[1, 2, 3, 4, 5, 6].map((index) => (
             <div key={index} className='teammate-info'>
               <label>Teammate {index} Name&nbsp;&nbsp;</label><br />
               <input
@@ -132,15 +140,15 @@ const Form = () => {
                 name={`teammate${index}Name`}
                 value={formData[`teammate${index}Name`]}
                 onChange={handleChange}
-                required
-              />
-              <label>Email&nbsp;&nbsp;</label><br />
+                required={index < 5}
+              /><br />
+              <label>Teammate {index} Email&nbsp;&nbsp;</label><br />
               <input
                 type='email'
                 name={`teammate${index}Email`}
                 value={formData[`teammate${index}Email`]}
                 onChange={handleChange}
-                required
+                required={index < 5}
               />
             </div>
           ))}
