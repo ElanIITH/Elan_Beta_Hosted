@@ -36,9 +36,9 @@ function Footer() {
                 <span>+91 63040 56873</span>
               </div>
               <div className='poc-inner'>
-                <span className='poc-name'>Anek Anjireddy</span>
+                <span className='poc-name'>Aditya Vikram Singh</span>
                 <span>Head of Sponsorship</span>
-                <span>+91 99896 77207</span>
+                <span>+91 94547 04285</span>
               </div>
             </div>
           </div>
