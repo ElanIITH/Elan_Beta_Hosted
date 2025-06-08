@@ -1,95 +1,99 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    outline: red 0px solid;
-    padding: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  outline: red 0px solid;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 ::selection {
-    background: #353535;
-    color: #ffffff;
+  background: #353535;
+  color: #ffffff;
 }
 
 ::-moz-selection {
-    background: #353535;
-    color: #ffffff;
+  background: #353535;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #000000;
 }
 
 html.lenis,
 html.lenis body {
-    height: auto;
+  height: auto;
 }
 
 .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
+  scroll-behavior: auto !important;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
+  overscroll-behavior: contain;
 }
 
 .lenis.lenis-stopped {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #root {
-    height: auto;
-    width: 100vw;
+  height: auto;
+  width: 100vw;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .link-red:hover {
-    color: red;
+  color: red;
 }
 
 .link-green:hover {
-    color: green;
+  color: green;
 }
 
 .link-yellow:hover {
-    color: #ffcc00;
+  color: #ffcc00;
 }
 
 .link-orange:hover {
-    color: orange;
+  color: orange;
+}
+
+.link-brown:hover {
+  color: brown;
 }
 
 .link-purple:hover {
-    color: mediumpurple;
+  color: mediumpurple;
 }
 
 .underline-white {
-    border-bottom: white solid 1px;
+  border-bottom: white solid 1px;
 }
 
 @media screen and (max-width: 992px) {
-    .mobile-hide {
-        display: none;
-    }
+  .mobile-hide {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .desktop-hide {
-        display: none;
-    }
+  .desktop-hide {
+    display: none;
+  }
 
-    * {
-        cursor: none;
-    }
+  * {
+    cursor: none;
+  }
 }

@@ -60,11 +60,11 @@ function Footer() {
                                                         to='https://www.instagram.com/elan_nvision.iith'>INSTAGRAM</Link>
             </div>
             <div className='social-link link-green'><Link target={'_blank'}
-                                                          to='https://x.com/elan_nvision'>x</Link></div>
+                                                          to='https://x.com/elan_nvision'>X</Link></div>
             <div className='social-link link-yellow'><Link target={'_blank'}
                                                            to='https://www.facebook.com/elannvision.iithyderabad/'>FACEBOOK</Link>
             </div>
-            <div className='social-link link-orange'><Link target={'_blank'}
+            <div className='social-link link-brown'><Link target={'_blank'}
                                                            to='https://www.linkedin.com/company/elan-nvision-iith/'>LINKEDIN</Link>
             </div>
           </div>
