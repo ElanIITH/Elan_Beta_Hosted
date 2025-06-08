@@ -16,29 +16,40 @@ function Footer() {
             <div className='heading poc-heading'>CONTACT US</div>
             <div className='poc'>
               <div className='poc-inner'>
-                <span className='poc-name'>Mehul Srivastava</span>
-                <span>Overall Head</span>
-                <span>+91 63952 63137</span>
+                <span className='poc-name'>Tanmay Vishwasrao</span>
+                <span>Overall Co-ordinator</span>
+                <span>elan.oc@sa.iith.ac.in</span>
+                <span>+91 99236 26782</span>
               </div>
               <div className='poc-inner'>
-                <span className='poc-name'>Vighnesh Sreepathi</span>
-                <span>Vice Overall Head</span>
-                <span>+91 81214 62682</span>
+                <span className='poc-name'>Syed Mishaal</span>
+                <span>Overall Co-ordinator</span>
+                <span>elan.oc@sa.iith.ac.in</span>
+                <span>+91 74185 95805</span>
               </div>
               <div className='poc-inner'>
-                <span className='poc-name'>Dhruv Sharma</span>
-                <span>Head of Public Relations</span>
-                <span>+91 77027 36060</span>
+                <span className='poc-name'>Harsha Vardhan Pulavarthi</span>
+                <span>Sponsorship Head</span>
+                <span>elan.sponsorship@sa.iith.ac.in</span>
+                <span>+91 94911 87225</span>
               </div>
               <div className='poc-inner'>
-                <span className='poc-name'>Ananya S Reddy</span>
-                <span>Head of Public Relations</span>
-                <span>+91 63040 56873</span>
+                <span className='poc-name'>Sai Charan Ajjarapu</span>
+                <span>Sponsorship Head</span>
+                <span>elan.sponsorship@sa.iith.ac.in</span>
+                <span>+91 83320 28101</span>
               </div>
               <div className='poc-inner'>
-                <span className='poc-name'>Aditya Vikram Singh</span>
-                <span>Head of Sponsorship</span>
-                <span>+91 94547 04285</span>
+                <span className='poc-name'>Saket Kashyap</span>
+                <span>PR & Outreach Head</span>
+                <span>elan.outreach@sa.iith.ac.in</span>
+                <span>+91 92341 68717</span>
+              </div>
+              <div className='poc-inner'>
+                <span className='poc-name'>Naishadha Voruganti</span>
+                <span>PR & Outreach Head</span>
+                <span>elan.outreach@sa.iith.ac.in</span>
+                <span>+91 93900 27710</span>
               </div>
             </div>
           </div>
