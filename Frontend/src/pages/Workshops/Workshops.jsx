@@ -26,7 +26,7 @@ function Workshops() {
           Is distance and time taken to reach our campus the one last thing stopping you from
           attending our amazing workshops? Well, don&apos;t worry because we got you covered there
           too! We arrange in-campus accommodation during the workshops for participants at
-          extremely affordable costs. Stay overnight in our campus and experience life at an IIT.
+          extremely affordable costs. Stay overnight in our campus and experience life at an IIT(Indian Institute of Technology).
           There are also transport services arranged for your ease on both the days of the
           workshop from in-demand stops in the city to our campus at economical prices. So
           what&apos;s stopping you from attending these workshops! Take a look at the next scheduled
