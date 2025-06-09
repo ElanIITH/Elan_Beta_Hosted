@@ -12,6 +12,7 @@ import Workshops from '/src/pages/Workshops/Workshops.jsx';
 import {ReactLenis, useLenis} from 'lenis/react';
 import {useEffect} from 'react';
 import {HashRouter, BrowserRouter, Route, Routes} from 'react-router-dom';
+import './assets/socials_icons/icons'
 import './App.css';
 
 import Form from '/src/components/Form/Form.jsx';

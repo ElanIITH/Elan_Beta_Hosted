@@ -1,5 +1,7 @@
 import './Footer.css';
 import {Link} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function Footer() {
   return (
@@ -17,7 +19,7 @@ function Footer() {
             <div className='poc'>
               <div className='poc-inner'>
                 <span className='poc-name'>Tanmay Vishwasrao</span>
-                <span>Overall Co-ordinator</span>
+                <span >Overall Co-ordinator</span>
                 <span>elan.oc@sa.iith.ac.in</span>
                 <span>+91 99236 26782</span>
               </div>
@@ -56,16 +58,27 @@ function Footer() {
 
           <div className='contact-socials'>
             <div className='heading socials-heading'>SOCIALS</div>
-            <div className='social-link link-red'><Link target={'_blank'}
-                                                        to='https://www.instagram.com/elan_nvision.iith'>INSTAGRAM</Link>
-            </div>
-            <div className='social-link link-green'><Link target={'_blank'}
-                                                          to='https://x.com/elan_nvision'>X</Link></div>
-            <div className='social-link link-yellow'><Link target={'_blank'}
-                                                           to='https://www.facebook.com/elannvision.iithyderabad/'>FACEBOOK</Link>
-            </div>
-            <div className='social-link link-brown'><Link target={'_blank'}
-                                                           to='https://www.linkedin.com/company/elan-nvision-iith/'>LINKEDIN</Link>
+            <div className='socials-inner'>
+              <div className='social-link link-red'>
+                <Link target={'_blank'} to='https://www.instagram.com/elan_nvision.iith'>
+                  <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" />
+                </Link>
+              </div>
+              <div className='social-link link-fb-blue'>
+                <Link target={'_blank'} to='https://www.facebook.com/elannvision.iithyderabad/'>
+                   <FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" />
+                </Link>
+              </div>
+              <div className='social-link link-black'>
+                <Link target={'_blank'} to='https://x.com/elan_nvision'>
+                  <FontAwesomeIcon icon={['fab', 'x-twitter']} size="2x" />
+                </Link>
+              </div>
+              <div className='social-link link-linkedin-blue'>
+                <Link target={'_blank'} to='https://www.linkedin.com/company/elan-nvision-iith/'>
+                  <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

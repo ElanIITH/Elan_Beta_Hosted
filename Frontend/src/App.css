@@ -58,6 +58,10 @@ a {
   color: red;
 }
 
+.link-black:hover {
+  color: black;
+}
+
 .link-green:hover {
   color: green;
 }
@@ -76,6 +80,14 @@ a {
 
 .link-purple:hover {
   color: mediumpurple;
+}
+
+.link-fb-blue:hover {
+  color: #1877f2;
+}
+
+.link-linkedin-blue:hover {
+  color: #0a66c2;
 }
 
 .underline-white {
