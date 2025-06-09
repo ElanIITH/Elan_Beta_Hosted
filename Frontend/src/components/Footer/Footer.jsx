@@ -55,6 +55,7 @@ function Footer() {
               </div>
             </div>
           </div>
+          
 
           <div className='contact-socials'>
             <div className='heading socials-heading'>SOCIALS</div>
