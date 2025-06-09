@@ -41,35 +41,6 @@ function Workshops() {
 
         <div className='workshop-tiles'>
 
-          <div className='workshop-tile'>
-            <div className='workshop-tile-poster'>
-              <img src={eth_hack_poster} alt=''/>
-            </div>
-            <div className='workshop-tile-title'>
-              <a
-                href='https://unstop.com/workshops-webinars/ethical-hacking-technical-workshop-elan-ivision-2025-iit-hyderabad-1174657?lb=58he6PlW'
-                rel='noopener noreferrer'
-                target='_blank'
-                className='underline-white'>
-                Register for workshop&#8599;
-              </a>
-            </div>
-          </div>
-
-          <div className='workshop-tile'>
-            <div className='workshop-tile-poster'>
-              <img src={aiml_poster} alt=''/>
-            </div>
-            <div className='workshop-tile-title'>
-              <a
-                href='https://unstop.com/workshops-webinars/ai-ml-workshop-mastering-the-future-of-technology-iit-hyderabad-1174416'
-                rel='noopener noreferrer'
-                target='_blank'
-                className='underline-white'>
-                Register for workshop&#8599;
-              </a>
-            </div>
-          </div>
 
         </div>
 
